@@ -2,6 +2,7 @@
 
 :root {
   box-sizing: border-box;
+  font-family: sans-serif;
   font-size: calc(1vw + 0.6em);
 }
 
@@ -35,12 +36,49 @@ header {
   justify-self: center;
 }
 
-header p {
+header h1 {
+  color: #205a41;
+  font-weight: normal;
+  letter-spacing: 0.22em;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.name-accent {
+  border-bottom: 2px solid #205a41;
+  color: #002856;
+  font-weight: 100;
+  letter-spacing: 0.17em;
+}
+
+header ul {
+  color: #205a41;
+  margin-top: 0;
   text-align: right;
+}
+
+header li {
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1;
+  list-style: none;
+}
+
+header li:first-of-type::after {
+  content: "";
+  background-image:url('images/logo.png');
+  background-size: 100%;
+  display: inline-block;
+  height: 1.9em;
+  left: 3px;
+  position: relative;
+  top: 12px;
+  width: 1.9em;
 }
 
 img {
   grid-area: 2 / 2 / 3 / 4;
+  width: 100%;
 }
 
 .summary {
