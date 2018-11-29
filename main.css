@@ -1,0 +1,26 @@
+/* GLOBAL STYLES */
+
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.6em);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 43.75em;
+}
+
+a:link {
+  color: #275456;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
