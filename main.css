@@ -119,8 +119,8 @@ img {
   text-align: center;
 }
 
-.services h1,
-.contact h1 {
+.services h2,
+.contact h2 {
   border-bottom: 2px solid #0d2b51;
   color: #275741;
   display: inline-block;
@@ -144,7 +144,7 @@ img {
   }
 }
 
-.services-list-wrapper h2 {
+.services h3 {
   color: #002856;
   font-size: 1.8em;
   font-style: italic;
@@ -156,23 +156,23 @@ img {
   writing-mode: vertical-lr;
 }
 
-.services-list-wrapper h2:first-of-type {
+.services h3:first-of-type {
   align-self: end;
   transform: rotate(180deg);
 }
 
-.services-list-wrapper h2:last-of-type {
+.services h3:last-of-type {
   align-self: start;
   order: 1;
 }
 
 @media (max-width: 35em) {
-  .services-list-wrapper h2:last-of-type {
+  .services h3:last-of-type {
     grid-area: 2 / 3 / 4 / 4;
   }
 }
 
-.services-list-wrapper ul {
+.services ul {
   background-color: #eeee;
   border-radius: 4px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
@@ -180,7 +180,7 @@ img {
   padding: 1em;
 }
 
-.services-list-wrapper li {
+.services li {
   color: #333;
   font-weight: bold;
   line-height: 1.5;
