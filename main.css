@@ -21,8 +21,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* LAYOUT */
-
 body {
   display: grid;
   grid: auto / 1fr 2fr 3fr 1fr;
@@ -30,10 +28,13 @@ body {
   max-width: 50.25em;
 }
 
+/* HEADER */
+
 header {
   align-self: center;
-  grid-column: 2 / 4;
+  grid-column: 1 / 5;
   justify-self: center;
+  min-width: 280px;
 }
 
 header h1 {
@@ -70,11 +71,13 @@ header li:first-of-type::after {
   background-size: 100%;
   display: inline-block;
   height: 1.9em;
-  left: 3px;
+  left: 0.1em;
   position: relative;
-  top: 13px;
+  top: 0.7em;
   width: 1.9em;
 }
+
+/*  IMAGE & OVERLAY  */
 
 .img-wrapper {
   grid-area: 2 / 2 / 4 / 4;
@@ -101,26 +104,18 @@ img {
   display: inline;
   color: #fff;
   grid-area: 2 / 3 / 3 / 4;
-  /*letter-spacing: 0.01em;*/
   margin-right: 1.4em;
   margin-top: 3.08em;
   padding: 0.2em 0;
   font-size: 1.27em;
   text-align: center;
-  /*text-shadow: 0.1em 0.1em 0.3em #000;*/
   z-index: 10;
 }
 
+/* SERVICES SECTION */
+
 .services {
   grid-area: 4 / 1 / 5 / 5;
-}
-
-.contact {
-  grid-area: 5 / 2 / 6 / 4;
-}
-
-.services,
-.contact {
   text-align: center;
 }
 
@@ -130,7 +125,8 @@ img {
   color: #275741;
   display: inline-block;
   font-size: 1.8em;
-  margin: 1.5em 0;
+  margin: 1.5em 0 1em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -152,23 +148,22 @@ img {
   color: #002856;
   font-size: 1.8em;
   font-style: italic;
-  font-weight: 700i;
+  font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 0.2;
   margin: 0;
   text-transform: uppercase;
+  writing-mode: vertical-lr;
 }
 
 .services-list-wrapper h2:first-of-type {
   align-self: end;
   transform: rotate(180deg);
-  writing-mode: vertical-lr;
-
 }
+
 .services-list-wrapper h2:last-of-type {
   align-self: start;
   order: 1;
-  writing-mode: vertical-lr;
 }
 
 @media (max-width: 35em) {
@@ -196,5 +191,42 @@ img {
 @media (max-width: 35em) {
   ul.engineering {
     grid-area: 2 / 2 / 3 / 3;
+  }
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  color: #222;
+  font-weight: bold;
+  grid-area: 5 / 1 / 6 / 5;
+  margin-bottom: 2em;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.contact > p {
+  margin: 0 0 2em;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 0 2em;
+  padding: 0;
+  list-style: none;
+}
+
+.team li {
+  color:  #002856;
+}
+
+@media (max-width: 49em) {
+  .team {
+    flex-direction: column;
+    align-items: center;
+  }
+  .team li {
+    margin: 1em;
   }
 }
