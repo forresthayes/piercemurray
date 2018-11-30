@@ -2,7 +2,7 @@
 
 :root {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: calc(1vw + 0.6em);
 }
 
@@ -39,7 +39,7 @@ header {
 header h1 {
   color: #205a41;
   font-weight: normal;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.26em;
   margin-bottom: 0;
   text-transform: uppercase;
 }
@@ -47,8 +47,8 @@ header h1 {
 .name-accent {
   border-bottom: 2px solid #205a41;
   color: #002856;
-  /*font-weight: 100;*/
-  letter-spacing: 0.17em;
+  font-weight: 100;
+  letter-spacing: 0.2em;
 }
 
 header ul {
@@ -152,6 +152,7 @@ img {
   color: #002856;
   font-size: 1.8em;
   font-style: italic;
+  font-weight: 700i;
   letter-spacing: 0.04em;
   line-height: 0.2;
   margin: 0;
