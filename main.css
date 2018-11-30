@@ -83,6 +83,12 @@ header li:first-of-type::after {
   grid-area: 2 / 1 / 4 / 5;
 }
 
+@media (min-width: 35em) {
+  .img-wrapper {
+    grid-area: 2 / 2 / 4 / 4;
+  }
+}
+
 .img-wrapper::after {
   display: block;
   position: relative;
@@ -103,12 +109,25 @@ img {
   border-radius: 4px;
   display: inline;
   color: #fff;
-  grid-area: 2 / 3 / 3 / 4;
-  margin-top: 3.8em;
-  padding: 0.2em 0;
-  font-size: 1.5em;
+  grid-area: 2 / 3 / 3 / 5;
+  margin: 1.8em 1.9em 0 0;
+  padding: 0.2em;
+  font-size: 1.2em;
   text-align: center;
   z-index: 10;
+}
+
+@media (min-width: 35em) {
+  .summary {
+    grid-area: 2 / 3 / 3 / 4;
+    margin-top: 1.4em;
+  }
+}
+
+@media (min-width: 48em) {
+  .summary {
+    margin-top: 3.4em;
+  }
 }
 
 /* SERVICES SECTION */
