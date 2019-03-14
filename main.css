@@ -118,14 +118,14 @@ img {
 }
 
 @media (min-width: 35em) {
-  .summary {
+  .motto {
     grid-area: 2 / 3 / 3 / 4;
     margin-top: 1.4em;
   }
 }
 
 @media (min-width: 48em) {
-  .summary {
+  .motto {
     margin-top: 3.4em;
   }
 }
